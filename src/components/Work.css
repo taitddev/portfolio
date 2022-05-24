@@ -1,0 +1,26 @@
+.project-container {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.project-heading {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 1210px) {
+  .project-container {
+    max-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .project-container {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+  }
+}

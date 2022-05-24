@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  padding: 6rem 2.4rem;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  line-height: 1.7;
+}
+
+.about-title {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

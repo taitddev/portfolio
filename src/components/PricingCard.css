@@ -1,0 +1,42 @@
+.pricing {
+  width: 100%;
+  padding: 6rem 3rem;
+}
+
+.card-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bar {
+  border-bottom: 1px solid #eee;
+  width: 10%;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.card:hover {
+  background-color: #141414;
+}
+
+@media screen and (max-width: 740px) {
+  .card-container {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
